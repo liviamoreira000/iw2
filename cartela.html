@@ -47,11 +47,11 @@
                 <td id="o4" onclick="MarcarCartela(this)">71</td>
             </tr>
             <tr>
-                <td id="b4" onclick="MarcarCartela(this)">5</td>
-                <td id="i4" onclick="MarcarCartela(this)">19</td>
-                <td id="n4" onclick="MarcarCartela(this)">32</td>
-                <td id="g4" onclick="MarcarCartela(this)">52</td>
-                <td id="o4" onclick="MarcarCartela(this)">70</td>
+                <td id="b5" onclick="MarcarCartela(this)">5</td>
+                <td id="i5" onclick="MarcarCartela(this)">19</td>
+                <td id="n5" onclick="MarcarCartela(this)">32</td>
+                <td id="g5" onclick="MarcarCartela(this)">52</td>
+                <td id="o5" onclick="MarcarCartela(this)">70</td>
             </tr>
         </tbody>
     </table>
@@ -61,8 +61,63 @@
    <button id="botao" onclick="Piscar()">
     piscando o Botão
    </button>
+      <button onclick="GerarCartela()">
+      Gerar Cartela
+      </button>
 
-   <script>
+   <script> 
+   function GerarCartela()
+    {
+       VetorB = GerarVetor(1,15)
+        console.log(VetorB)
+
+        VetorI = GerarVetor(16,30)
+        console.log(VetorI)
+
+        VetorN = GerarVetor(31,45)
+        console.log(VetorN)
+
+        
+        VetorG = GerarVetor(46,60)
+        console.log(VetorG)
+
+        
+        VetorO = GerarVetor(61,75)
+        console.log(VetorO)
+
+      for(var i = 0; i  < 5; i++)
+      {
+        var td = document.getElementById("b"+(i+1) )
+        td.innerText = VetorB[i]
+
+        var td = document.getElementById("i"+(i+1) )
+        td.innerText = VetorI[i]
+
+        var td = document.getElementById("n"+(i+1) )
+        td.innerText = VetorN[i]
+      
+        var td = document.getElementById("g"+(i+1) )
+        td.innerText = VetorG[i]
+
+        var td = document.getElementById("o"+(i+1) )
+        td.innerText = VetorO[i]
+      
+      
+      
+      }
+
+
+
+    }
+    function GerarVetor(numeroInicial,numeroFinal )
+    {
+       vetor = [ ]
+       for(var i = numeroInicial; i <= numeroFinal;i++)
+       {
+         vetor.push(i)
+       }
+       return vetor
+    }
       function Piscar()
     {
         var botao = document.getElementById("botao");
