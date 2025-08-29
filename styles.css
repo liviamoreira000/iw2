@@ -1,0 +1,66 @@
+body {
+
+    background-color: #bbb8ba;
+
+    font-family: 'Segoe Script', sans-serif;
+
+}
+
+.card {
+
+    margin-top: 20px;
+
+}
+
+#searchButton {
+
+    padding: 10px 20px;
+
+}
+
+.btn-warning {
+
+    background-color: #b30d68;
+
+    border-color: #f1d7e6;
+
+    color: rgb(231, 231, 231);
+
+}
+
+.btn-danger {
+
+    background-color: #e6b0b5;
+
+    border-color: #dc3545;
+
+    color: white;
+
+}
+
+.table td, .table th {
+
+    vertical-align: middle;
+
+}
+
+.table thead {
+
+    background-color: #e99dcc;
+
+    color: rgb(255, 255, 255);
+
+}
+
+.table tbody tr:hover {
+
+    background-color: #f1f1f1;
+
+}
+
+#search {
+
+    width: 100%;
+
+}
+ 
